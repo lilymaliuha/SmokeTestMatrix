@@ -1,0 +1,155 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CDS Smoke Test Suite" verbose="1" preserve-order="true" parallel="none" configfailurepolicy="continue">
+
+    <listeners>
+        <listener class-name="com.xyleme.bravais.utils.ScreenShotOnFailure"/>
+        <listener class-name="com.xyleme.bravais.utils.AnnotationTransformer"/>
+        <listener class-name="com.xyleme.bravais.utils.TestListener"/>
+    </listeners>
+
+<!--================================================= Suite set up ==================================================-->
+
+    <test name="Suite Set Up">
+        <classes>
+            <class name="cdssmoketest.SuiteSetUp"/>
+        </classes>
+    </test>
+
+<!--================================================ /Suite set up ==================================================-->
+
+    <test name="Successful and unsuccessful login tests">
+        <classes>
+            <class name="cdssmoketest.logintests.TestSuccessfulLogin"/>
+            <class name="cdssmoketest.logintests.TestUnsuccessfulLogin"/>
+        </classes>
+    </test>
+
+    <test name="Latest Updates page tests">
+        <classes>
+            <class name="cdssmoketest.latestupdatespagetests.TestLatestUpdatePage"/>
+        </classes>
+    </test>
+
+    <test name="Recent Documents page tests">
+        <classes>
+            <class name="cdssmoketest.recentdocumentstests.TestRecentDocumentsPage"/>
+        </classes>
+    </test>
+
+    <test name="Favorites page tests">
+        <classes>
+            <class name="cdssmoketest.favoritestests.TestFavoritesPage"/>
+        </classes>
+    </test>
+
+    <test name="Documents page tests">
+        <classes>
+            <class name="cdssmoketest.documentspagetests.TestDocumentsPage"/>
+        </classes>
+    </test>
+
+    <test name="Multiple files uploading tests">
+        <classes>
+            <class name="cdssmoketest.filesuploadingtests.TestMultipleFilesUploading"/>
+        </classes>
+    </test>
+
+    <test name="Image and Excel document preview tests">
+        <classes>
+            <class name="cdssmoketest.previewtests.TestExcelAndImagePreview"/>
+        </classes>
+    </test>
+
+    <test name="Single document downloading tests">
+        <classes>
+            <class name="cdssmoketest.documentsdownloadingtests.TestSingleDocumentDownloading"/>
+        </classes>
+    </test>
+
+    <test name="Learning Objects panel tests">
+        <classes>
+            <class name="cdssmoketest.learningobjectspanetests.TestLearningObjectsPane"/>
+        </classes>
+    </test>
+
+    <test name="Document comments tests">
+        <classes>
+            <class name="cdssmoketest.documentcommentstests.TestCommentAddingEditingDeleting"/>
+            <class name="cdssmoketest.documentcommentstests.TestCommentsDisabling"/>
+        </classes>
+    </test>
+
+    <test name="Multiple Files downloading tests">
+        <classes>
+            <class name="cdssmoketest.documentsdownloadingtests.TestMultipleDocumentsDownloading"/>
+        </classes>
+    </test>
+
+    <test name="Document moving tests">
+        <classes>
+            <class name="cdssmoketest.documentmovingtests.TestDocumentMoving"/>
+        </classes>
+    </test>
+
+    <test name="Classification import and modification tests">
+        <classes>
+            <class name="cdssmoketest.classificationstests.TestClassificationImportAndModification"/>
+        </classes>
+    </test>
+
+    <test name="Custom Attributes functionality tests">
+        <classes>
+            <class name="cdssmoketest.customattributestests.TestCustomAttributeFunctionality"/>
+        </classes>
+    </test>
+
+    <test name="Documents searching tests">
+        <classes>
+            <class name="cdssmoketest.searchtests.TestDocumentSearching"/>
+        </classes>
+    </test>
+
+    <test name="User Attributes page test">
+        <classes>
+            <class name="cdssmoketest.userattributespagetests.TestUserAttributesPage"/>
+        </classes>
+    </test>
+
+    <test name="Branding page tests">
+        <classes>
+            <class name="cdssmoketest.brandingpagetests.TestBrandingPage"/>
+        </classes>
+    </test>
+
+    <test name="Trusted Applications page test">
+        <classes>
+            <class name="cdssmoketest.trustedapplicationspagetests.TestTrustedApplicationsPage"/>
+        </classes>
+    </test>
+
+    <test name="Groups and Users pages tests">
+        <classes>
+            <class name="cdssmoketest.groupsanduserspagestests.TestGroupsAndUsersPages"/>
+            <class name="cdssmoketest.groupsanduserspagestests.TestContentPermissionsSetting"/>
+        </classes>
+    </test>
+
+    <test name="Switching between Admin and Consumer Portals test">
+        <classes>
+            <class name="cdssmoketest.portalmodestests.TestSwitchingFromAdminToConsumerPortal"/>
+        </classes>
+    </test>
+
+    <test name="Forgot Password feature test">
+        <classes>
+            <class name="cdssmoketest.logintests.TestForgotPasswordFeature"/>
+        </classes>
+    </test>
+
+    <!--Should be commented out in case of testing on Perf and portal6 environments-->
+    <test name="CAS Login test">
+        <classes>
+            <class name="cdssmoketest.logintests.TestCASLogin"/>
+        </classes>
+    </test>
+</suite>

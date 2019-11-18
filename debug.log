@@ -1,0 +1,43 @@
+[0223/191253.149:ERROR:process_reader_win.cc(114)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights.  (0xc0000022)
+[0223/191253.160:ERROR:exception_snapshot_win.cc(87)] thread ID 32528 not found in process
+[0223/191253.160:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0412/201431.637:ERROR:process_info.cc(116)] ReadProcessMemory bool __cdecl crashpad::`anonymous-namespace'::ReadStruct<struct crashpad::process_types::PEB<struct crashpad::process_types::internal::Traits32>>(void *,unsigned __int64,struct crashpad::process_types::PEB<struct crashpad::process_types::internal::Traits32> *): Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0412/201431.638:ERROR:process_info.cc(559)] ReadProcessData failed
+[0412/201431.639:ERROR:process_reader_win.cc(233)] ReadMemory at 0x6e0e7dc8 of 12 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0412/201431.639:WARNING:process_snapshot_win.cc(68)] ReadMemory ExceptionInformation failed
+[0412/201431.639:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0412/201431.639:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: An attempt was made to access an exiting process.  (0xc000010a)
+[0413/184058.106:ERROR:process_info.cc(343)] VirtualQueryEx: Access is denied. (0x5)
+[0413/184058.126:ERROR:process_info.cc(564)] ReadMemoryInfo failed
+[0413/184058.126:ERROR:process_reader_win.cc(233)] ReadMemory at 0x682d7dc8 of 12 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0413/184058.126:WARNING:process_snapshot_win.cc(68)] ReadMemory ExceptionInformation failed
+[0413/184058.126:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0413/184058.126:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: An attempt was made to access an exiting process.  (0xc000010a)
+[0503/030007.007:ERROR:process_info.cc(625)] range at 0x4aee2eaa00000000, size 0x1cb fully unreadable
+[0503/030007.037:ERROR:process_info.cc(625)] range at 0x4aee2f0c00000000, size 0x1cb fully unreadable
+[0503/030007.037:ERROR:process_info.cc(625)] range at 0x0, size 0x1cb fully unreadable
+[0223/202139.555:ERROR:process_info.cc(632)] range at 0x4f4d378c00000000, size 0x212 fully unreadable
+[0223/202139.577:ERROR:process_info.cc(632)] range at 0x4f4d37f000000000, size 0x212 fully unreadable
+[0223/202139.578:ERROR:process_info.cc(632)] range at 0x0, size 0x212 fully unreadable
+[0227/154553.227:ERROR:process_info.cc(632)] range at 0xbd03378c00000000, size 0x16a fully unreadable
+[0227/154553.252:ERROR:process_info.cc(632)] range at 0xbd0337f000000000, size 0x16a fully unreadable
+[0227/154553.252:ERROR:process_info.cc(632)] range at 0x0, size 0x16a fully unreadable
+[0227/164012.590:ERROR:process_info.cc(632)] range at 0x85fc378800000000, size 0x126 fully unreadable
+[0227/164012.590:ERROR:process_info.cc(632)] range at 0x85fc37ec00000000, size 0x126 fully unreadable
+[0227/164012.590:ERROR:process_info.cc(632)] range at 0x0, size 0x126 fully unreadable
+[0227/220949.660:ERROR:process_info.cc(632)] range at 0x926378400000000, size 0x1bc fully unreadable
+[0227/220949.684:ERROR:process_info.cc(632)] range at 0x92637e800000000, size 0x1bc fully unreadable
+[0227/220949.684:ERROR:process_info.cc(632)] range at 0x0, size 0x1bc fully unreadable
+[0306/135859.223:ERROR:process_info.cc(632)] range at 0x6c09378800000000, size 0x295 fully unreadable
+[0306/135859.241:ERROR:process_info.cc(632)] range at 0x6c0937ec00000000, size 0x295 fully unreadable
+[0306/135859.241:ERROR:process_info.cc(632)] range at 0x0, size 0x295 fully unreadable
+[0306/141900.480:ERROR:process_info.cc(632)] range at 0x1cf1378800000000, size 0x285 fully unreadable
+[0306/141900.480:ERROR:process_info.cc(632)] range at 0x1cf137ec00000000, size 0x285 fully unreadable
+[0306/141900.480:ERROR:process_info.cc(632)] range at 0x0, size 0x285 fully unreadable
+[0307/002723.664:ERROR:process_info.cc(632)] range at 0x7373378c00000000, size 0x179 fully unreadable
+[0307/002723.700:ERROR:process_info.cc(632)] range at 0x737337f000000000, size 0x179 fully unreadable
+[0307/002723.700:ERROR:process_info.cc(632)] range at 0x0, size 0x179 fully unreadable
+[0307/003101.639:ERROR:process_info.cc(632)] range at 0xe770378c00000000, size 0x1e8 fully unreadable
+[0307/003101.639:ERROR:process_info.cc(632)] range at 0xe77037f000000000, size 0x1e8 fully unreadable
+[0307/003101.639:ERROR:process_info.cc(632)] range at 0x0, size 0x1e8 fully unreadable
+[0827/104455.663:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports

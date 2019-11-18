@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CDS Smoke Test" verbose="1" preserve-order="true" parallel="false" configfailurepolicy="continue">
+    <listeners>
+        <!--<listener class-name="com.xyleme.bravais.utils.ScreenShotOnFailure"/>-->
+        <listener class-name="com.xyleme.bravais.utils.AnnotationTransformer"/>
+        <listener class-name="com.xyleme.bravais.utils.TestListener"/>
+    </listeners>
+
+    <test name="Latest Updates page tests">
+        <classes>
+            <class name="cdssmoketest.latestupdatespagetests.TestLatestUpdatePage"/>
+        </classes>
+    </test>
+</suite>

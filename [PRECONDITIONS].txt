@@ -1,0 +1,38 @@
+Before running CDS Smoke test, please check/do the following:
+ > Check if all configurations in _ENVIRONMENT_.properties file correspond to the expected ones;
+ > Make sure the following users are created in the CDS you're going to use for testing: cds.tester, bcp.tester, testemailprocessing;
+ > Make sure the following folders/documents structure is present in the CDS you're going to use for testing:
+  folder 'Automated CDS Smoke test':
+    * folder 'Documents for Search testing':
+      * file 'Sample_m4v.m4v' (with 'Language' parameter on Details page set to 'Indonesian')
+    * folder 'Documents Moving':
+      * folder 'Original Folder':
+        * file 'Sample_pdf.pdf'
+      * folder 'Target Folder'
+    * folder 'Favorites':
+      * folder 'Documents':
+        * file 'image.png'
+        * file 'presentation.pptx'
+        * file 'text.doc'
+      * folder 'Folder A':
+        * file 'pdfFile.pdf'
+      * folder 'Folder B':
+        * file 'image.jpg'
+      * folder 'Folder C':
+        * file 'excelFile.xlsx'
+    * folder 'Latest Updates':
+      * file 'Doc 821'
+    * folder 'Preview':
+      * file 'Sample_jpeg.jpeg'
+      * file 'Sample_xltx.xltx'
+    * folder 'Recent Documents':
+      * file 'documentForRecentUpdatesTests349.jpg'
+    * folder 'Uploaded Files'
+ > Make sure that access to documents via public shared links is not limited by 'Tools' feature <<!>>;
+ > Make sure 'Admin Portal' feature is selected in the Feature Access panel of 'All Users' group <<!>>;
+ > Make sure 'All users' group has feature 'Admin Portal' selected in the Feature Access tab on the group details page <<!>>;
+ > Set up 'createDriverInstance()' method in DriverMaster class according to the way you're going to run the tests (options:
+ locally in a normal browser, locally on Selenium grid in a headless browser, remotely on a remote Selenium grid in a
+ headless browser <<!>>;
+ > Specify product version and test environment via respective properties in POM file in case you're going to run the
+ tests locally (or pass it via respective Maven command e.g. "mvn clean test -DtestEnvironment=qa -DproductVersion=7.8_RC2").
